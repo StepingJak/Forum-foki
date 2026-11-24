@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Header } from './Header'
 import { Main } from './MainBody'
 function App(props) {
-  console.log("Dane w App:", props.sealData)
   const [mode, setMode] = useState(true)
   function ChangeMode() {
     if(mode) {
