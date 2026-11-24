@@ -1,7 +1,9 @@
 import './App.css'
 import { useState } from 'react'
 import { Header } from './Header'
-function App() {
+import { Main } from './MainBody'
+function App(props) {
+  console.log("Dane w App:", props.sealData)
   const [mode, setMode] = useState(true)
   function ChangeMode() {
     if(mode) {
@@ -12,12 +14,10 @@ function App() {
   }
   return (
   <>
-    <head>
-
-    </head>
-    <body className={mode ? "light" : "dark"}>
+    <div className={mode ? "light" : "dark"}>
       <Header mode={mode} setMode={ChangeMode}/>
-    </body>
+      <Main sealData={props.sealData}></Main>
+    </div>
   </>
   )
 }
