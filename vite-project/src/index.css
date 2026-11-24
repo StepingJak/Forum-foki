@@ -1,0 +1,17 @@
+h1 {
+  font-size: 30px;
+  margin: 5px;
+}
+h2 {
+  font-size: 15px;
+  margin: 0px;
+}
+header {
+  text-align: center;
+}
+.light header {
+  background-color: white;
+}
+.dark header {
+  background-color: #1a1e21;
+}
