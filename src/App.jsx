@@ -15,7 +15,7 @@ function App(props) {
   <>
     <div className={mode ? "light" : "dark"}>
       <Header mode={mode} setMode={ChangeMode}/>
-      <Main sealData={props.sealData}></Main>
+      <Main sealData={props.sealData}/>
     </div>
   </>
   )

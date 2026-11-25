@@ -59,6 +59,22 @@ header h1 {
     background-color: #1a1e21;
     color: white;
 }
+button {
+  border-radius: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+.dark button {
+    background-color: darkslategray;
+    color: white;
+}
+.light button {
+    background-color: #1a1e21;
+    color: white;
+}
 #sealContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -74,9 +90,9 @@ header h1 {
   text-align: center;
 }
 .light .card {
-  background-color: #ffffff;
-  color: #222;
-  border: 1px solid #ddd;
+  background-color: white;
+  color: #222222;
+  border: 1px solid #dddddd;
 }
 
 .dark .card {
@@ -113,4 +129,7 @@ main input {
   border: 2px solid #3c3e44;
   border-radius: 5px;
   box-sizing: border-box;
+}
+table {
+  margin: auto
 }
